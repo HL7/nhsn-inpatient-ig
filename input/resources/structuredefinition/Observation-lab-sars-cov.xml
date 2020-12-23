@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Observation-lab-sars-cov"/>
+    <meta>
+        <versionId value="5"/>
+        <lastUpdated value="2020-12-23T23:12:21.416+00:00"/>
+        <source value="#GxzVpDNvk1WASQqh"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Observation-lab-sars-cov"/>
+    <version value="0.1.0"/>
+    <name value="ObservationLabSarsCov"/>
+    <title value="Observation Laboratory SARS COVID-19"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This profile reprsents a SARS COVID-19 lab test"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <short value="Laboratory Test Name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="extensible"/>
+                <description value="LOINC codes"/>
+                <valueSet value="http://hl7.org/fhir/ValueSet/observation-codes"/>
+            </binding>
+        </element>
+        <element id="Observation.code.coding">
+            <path value="Observation.code.coding"/>
+            <slicing>
+                <discriminator>
+                    <type value="pattern"/>
+                    <path value="$this"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.code.coding:testSarsCov2NucleicAcid">
+            <path value="Observation.code.coding"/>
+            <sliceName value="testSarsCov2NucleicAcid"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <description value="COVID_19 (Tests for SARS_CoV_2 Nucleic Acid)"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1142"/>
+            </binding>
+        </element>
+        <element id="Observation.code.coding:testPanelsSarsCov2NucleicAcid">
+            <path value="Observation.code.coding"/>
+            <sliceName value="testPanelsSarsCov2NucleicAcid"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <description value="COVID_19 (Test Panels for SARS_CoV_2 Nucleic Acid)"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1144"/>
+            </binding>
+        </element>
+        <element id="Observation.code.coding:testSarsCov2IgGAntibody">
+            <path value="Observation.code.coding"/>
+            <sliceName value="testSarsCov2IgGAntibody"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <description value="COVID_19 (Tests for SARS_CoV_2 IgG Antibody)"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1152"/>
+            </binding>
+        </element>
+        <element id="Observation.code.coding:testSarsCov2IgMAntibody">
+            <path value="Observation.code.coding"/>
+            <sliceName value="testSarsCov2IgMAntibody"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <description value="COVID_19 (Tests for SARS_CoV_2 IgM Antibody)"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1153"/>
+            </binding>
+        </element>
+        <element id="Observation.code.coding:testPanelsSarsCov2Antibody">
+            <path value="Observation.code.coding"/>
+            <sliceName value="testPanelsSarsCov2Antibody"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <description value="COVID_19 (Test Panels for SARS_CoV_2 Antibody)"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1154"/>
+            </binding>
+        </element>
+        <element id="Observation.code.coding:testSarsCov2Antibody">
+            <path value="Observation.code.coding"/>
+            <sliceName value="testSarsCov2Antibody"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <description value="COVID_19 (Tests for SARS_CoV_2 Antibody)"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1157"/>
+            </binding>
+        </element>
+        <element id="Observation.code.coding:testSarsCov2Antigen">
+            <path value="Observation.code.coding"/>
+            <sliceName value="COVID_19 (Tests for SARS_CoV_2 Antigen)"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1158"/>
+            </binding>
+        </element>
+        <element id="Observation.code.coding:testSarsCov2CultureIdMethod">
+            <path value="Observation.code.coding"/>
+            <sliceName value="testSarsCov2CultureIdMethod"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <description value="COVID_19 (Tests for SARS_CoV_2 by Culture and Identification Method)"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1223"/>
+            </binding>
+        </element>
+        <element id="Observation.code.coding:testPanelsSarsCov2Antigen">
+            <path value="Observation.code.coding"/>
+            <sliceName value="testPanelsSarsCov2Antigen"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <description value="COVID_19 (Test Panels for SARS_CoV_2 Antigen)"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1270"/>
+            </binding>
+        </element>
+        <element id="Observation.effective[x]">
+            <path value="Observation.effective[x]"/>
+            <definition value="Date specimen collected/drawn."/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-inpatient-med-admin"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-12-17T23:09:09.350+00:00"/>
-        <source value="#2JcseiPB7ezIqfzA"/>
+        <versionId value="9"/>
+        <lastUpdated value="2020-12-23T23:19:31.827+00:00"/>
+        <source value="#3etynXtEQAnCrHTk"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/ade-hypo/StructureDefinition/Composition-inpatient-med-admin"/>
-    <version value="1.0.0"/>
+    <url value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Composition-inpatient-med-admin"/>
+    <version value="0.1.0"/>
     <name value="CompositionInpatientMedAdmin"/>
     <title value="Composition - Inpatient Medication Administration"/>
     <status value="active"/>
@@ -43,6 +43,7 @@
                     <code value="87231-7"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.subject">
             <path value="Composition.subject"/>
@@ -76,6 +77,7 @@
                 <rules value="open"/>
             </slicing>
             <min value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:medicationSection">
             <path value="Composition.section"/>
@@ -233,6 +235,55 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+            </type>
+        </element>
+        <element id="Composition.section:adverseEventSection">
+            <path value="Composition.section"/>
+            <sliceName value="adverseEventSection"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:adverseEventSection.title">
+            <path value="Composition.section.title"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:adverseEventSection.code">
+            <path value="Composition.section.code"/>
+            <short value="Adverse Event Section"/>
+            <min value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="85893-6"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:adverseEventSection.text">
+            <path value="Composition.section.text"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:adverseEventSection.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="resolve()"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:adverseEventSection.entry:AdverseEvent">
+            <path value="Composition.section.entry"/>
+            <sliceName value="AdverseEvent"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/AdverseEvent"/>
             </type>
         </element>
     </differential>

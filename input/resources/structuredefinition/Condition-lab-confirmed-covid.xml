@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Condition-lab-confirmed-covid"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2020-12-23T22:14:21.777+00:00"/>
+        <source value="#ubzkV7OTcY1ncDG1"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Condition-lab-confirmed-covid"/>
+    <version value="0.1.0"/>
+    <name value="ConditionLabConfirmedCovid"/>
+    <title value="Condition - Lab Confirmed COVID-19"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="This Condition profile represents a laboratory confirmed COVID-19 diagnosis."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="United States of America"/>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Condition"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Condition">
+            <path value="Condition"/>
+            <min value="0"/>
+            <max value="*"/>
+            <base>
+                <path value="us-core-condition"/>
+                <min value="0"/>
+                <max value="*"/>
+            </base>
+            <mustSupport value="false"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="Condition.code">
+            <path value="Condition.code"/>
+            <binding>
+                <strength value="required"/>
+                <description value="COVID_19 (Disorders) (SNOMED)"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1223.9"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

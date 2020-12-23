@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationAdministration
+    xmlns="http://hl7.org/fhir">
+    <id value="medicationadministration-remdesivir-med-admin-1"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-12-23T23:48:58.079+00:00"/>
+        <source value="#EAK8JbjOkMQZPkX5"/>
+    </meta>
+    <status value="completed"/>
+    <medicationCodeableConcept>
+        <coding>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="2395502"/>
+            <display value="remdesivir 100 MG Injection [Veklury]"/>
+        </coding>
+        <text value="remdesivir 100 MG Injection [Veklury]"/>
+    </medicationCodeableConcept>
+    <subject>
+        <reference value="Patient/patient-med-admin-1"/>
+    </subject>
+    <effectivePeriod>
+        <start value="2020-04-08"/>
+        <end value="2018-04-08"/>
+    </effectivePeriod>
+    <dosage>
+        <route>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="47625008"/>
+                <display value="Intravenous use"/>
+            </coding>
+        </route>
+        <dose>
+            <value value="100"/>
+            <unit value="mg"/>
+        </dose>
+    </dosage>
+</MedicationAdministration>

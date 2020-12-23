@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Condition-suspected-covid"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-12-23T22:13:38.732+00:00"/>
+        <source value="#eVTMBUocA4d5TMWp"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Condition-suspected-covid"/>
+    <version value="0.1.0"/>
+    <name value="ConditionSuspectedCovid"/>
+    <title value="Condition - Suspected COVID-19"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="This Condition profile represents a suspected COVID-19 diagnosis."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="United States of America"/>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Condition"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Condition">
+            <path value="Condition"/>
+            <min value="0"/>
+            <max value="*"/>
+            <base>
+                <path value="us-core-condition"/>
+                <min value="0"/>
+                <max value="*"/>
+            </base>
+            <mustSupport value="false"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="Condition.code">
+            <path value="Condition.code"/>
+            <binding>
+                <strength value="required"/>
+                <description value="C19HCC Suspected COVID19 Infection SNOMEDCT"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1032.115"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

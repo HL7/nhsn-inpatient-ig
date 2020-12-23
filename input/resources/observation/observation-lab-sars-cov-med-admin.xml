@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-lab-sars-cov-med-admin"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-12-23T23:37:39.661+00:00"/>
+        <source value="#BdxZL9UoYdTNgh6r"/>
+        <profile value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Observation-lab-sars-cov"/>
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+            <display value="Laboratory"/>
+        </coding>
+        <text value="Laboratory"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="94564-2"/>
+            <display value="SARS coronavirus 2 IgM Ab [Presence] in Serum or Plasma by Immunoassay"/>
+        </coding>
+        <text value="SARS coronavirus 2 IgM Ab [Presence] in Serum or Plasma by Immunoassay"/>
+    </code>
+    <subject>
+        <reference value="Patient/patient-med-admin-1"/>
+        <display value="Name: 'masked'"/>
+    </subject>
+    <effectiveDateTime value="2020-08-04"/>
+</Observation>
