@@ -68,7 +68,7 @@
         </code>
         <entry>
             <reference value="Observation/observation-lab-sars-cov-med-admin"/>
-            <display value="SARS coronavirus 2 IgM Ab [Presence] in Serum or Plasma by Immunoassay"/>
+            <display value="SARS-CoV-2 (COVID-19) IgM Ab [Presence] in Serum or Plasma by Immunoassay"/>
         </entry>
     </section>
     <section>

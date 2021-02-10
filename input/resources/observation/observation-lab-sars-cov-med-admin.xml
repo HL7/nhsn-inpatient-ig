@@ -18,9 +18,9 @@
         <coding>
             <system value="http://loinc.org"/>
             <code value="94564-2"/>
-            <display value="SARS coronavirus 2 IgM Ab [Presence] in Serum or Plasma by Immunoassay"/>
+            <display value="SARS-CoV-2 (COVID-19) IgM Ab [Presence] in Serum or Plasma by Immunoassay"/>
         </coding>
-        <text value="SARS coronavirus 2 IgM Ab [Presence] in Serum or Plasma by Immunoassay"/>
+        <text value="SARS-CoV-2 (COVID-19) IgM Ab [Presence] in Serum or Plasma by Immunoassay"/>
     </code>
     <subject>
         <reference value="Patient/patient-med-admin-1"/>
