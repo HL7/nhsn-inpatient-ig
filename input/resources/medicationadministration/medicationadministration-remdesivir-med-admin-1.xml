@@ -4,7 +4,7 @@
     <id value="medicationadministration-remdesivir-med-admin-1"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2020-12-23T23:48:58.079+00:00"/>
+        <lastUpdated value="2021-12-23T23:48:58.079+00:00"/>
         <source value="#EAK8JbjOkMQZPkX5"/>
     </meta>
     <status value="completed"/>
@@ -20,8 +20,8 @@
         <reference value="Patient/patient-med-admin-1"/>
     </subject>
     <effectivePeriod>
-        <start value="2020-04-08"/>
-        <end value="2018-04-08"/>
+        <start value="2021-01-02"/>
+        <end value="2021-01-10"/>
     </effectivePeriod>
     <dosage>
         <route>

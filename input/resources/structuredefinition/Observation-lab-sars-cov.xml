@@ -4,7 +4,7 @@
     <id value="Observation-lab-sars-cov"/>
     <meta>
         <versionId value="5"/>
-        <lastUpdated value="2020-12-23T23:12:21.416+00:00"/>
+        <lastUpdated value="2021-12-23T23:12:21.416+00:00"/>
         <source value="#GxzVpDNvk1WASQqh"/>
     </meta>
     <url value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Observation-lab-sars-cov"/>

@@ -4,7 +4,7 @@
     <id value="Composition-inpatient-med-admin"/>
     <meta>
         <versionId value="11"/>
-        <lastUpdated value="2020-12-24T01:55:52.825+00:00"/>
+        <lastUpdated value="2021-12-24T01:55:52.825+00:00"/>
         <source value="#VjzSxMcJH3ancaSr"/>
     </meta>
     <url value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Composition-inpatient-med-admin"/>

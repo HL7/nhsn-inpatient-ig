@@ -2,11 +2,6 @@
 <MedicationAdministration
     xmlns="http://hl7.org/fhir">
     <id value="medicationadministration-azithromycin-med-admin-1"/>
-    <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-12-23T23:48:58.093+00:00"/>
-        <source value="#OoJHg8hWNQRrpQUj"/>
-    </meta>
     <status value="completed"/>
     <medicationCodeableConcept>
         <coding>
@@ -20,8 +15,8 @@
         <reference value="Patient/patient-med-admin-1"/>
     </subject>
     <effectivePeriod>
-        <start value="2020-04-08"/>
-        <end value="2018-04-08"/>
+        <start value="2021-01-02"/>
+        <end value="2021-01-10"/>
     </effectivePeriod>
     <dosage>
         <text value="Two tablets at once"/>

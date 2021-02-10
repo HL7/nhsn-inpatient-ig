@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition xmlns="http://hl7.org/fhir">
+    <id value="composition-med-admin-1"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Composition-inpatient-med-admin"/>
+    </meta>
+    <status value="final"/>
+    <type>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="87231-7"/>
+            <display value="Medication administration.extended Document"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/patient-med-admin-1"/>
+        <display value="Name: 'masked'"/>
+    </subject>
+    <encounter>
+        <reference value="Encounter/encounter-completed-inpatient-med-admin-1"/>
+    </encounter>
+    <date value="2021-01-12T22:13:23Z"/>
+    <author>
+        <reference value="PractitionerRole/practitioner-med-admin-henry-seven"/>
+        <display value="Henry Seven, MD"/>
+    </author>
+    <title value="Inpatient Medication Administration"/>
+    <section>
+        <title value="Medication Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="10160-0"/>
+                <display value="Medication use"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="MedicationAdministration/medicationadministration-azithromycin-med-admin-1"/>
+            <display value="Azithromycin 500 MG Oral Tablet"/>
+        </entry>
+        <entry>
+            <reference value="MedicationAdministration/medicationadministration-remdesivir-med-admin-1"/>
+            <display value="remdesivir 100 MG Injection [Veklury]"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Problems Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="11450-4"/>
+                <display value="Problem list - Reported"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Condition/condition-hypertension-med-admin-1"/>
+            <display value="Hypertensive disorder, systemic arterial (disorder)"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Results Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="30954-2"/>
+                <display value="Relevant Dx tests/lab data"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Observation/observation-lab-sars-cov-med-admin"/>
+            <display value="SARS coronavirus 2 IgM Ab [Presence] in Serum or Plasma by Immunoassay"/>
+        </entry>
+    </section>
+    <section>
+        <title value="History of Present Illness Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="10164-2"/>
+                <display value="History of Present illness Narrative"/>
+            </coding>
+        </code>
+        <text>
+            <status value="generated"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">
+                <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+                    <tr>
+                        <td style="font-weight: bold">title</td>
+                        <td>
+                            <div title="title">History of Present Illness Section</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold">code</td>
+                        <td>
+                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                <li>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <div title="display">History of Present illness Narrative</div> ( <div title="code">10164-2</div> ) </li>
+                                        <li>
+                                            <div title="system">
+                                                <a href="http://loinc.org">http://loinc.org</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" lang="en-US" class="text-no-entries"> Persistent Cough REPORTED starting on 2018/03/05 <br/> Whooping Respiration not reported <br/> Paroxysms Of Coughing REPORTED starting on 2018/03/06 <br/> Post-tussive vomiting not reported </td>
+                    </tr>
+                </table>
+            </div>
+        </text>
+    </section>
+</Composition>
