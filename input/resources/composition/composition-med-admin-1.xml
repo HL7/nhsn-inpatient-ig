@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Composition xmlns="http://hl7.org/fhir">
+<Composition
+    xmlns="http://hl7.org/fhir">
     <id value="composition-med-admin-1"/>
     <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2021-02-10T03:23:44.381+00:00"/>
+        <source value="#v0hDwqV3PoHyuqWu"/>
         <profile value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Composition-inpatient-med-admin"/>
     </meta>
     <status value="final"/>
@@ -21,7 +25,7 @@
     </encounter>
     <date value="2021-01-12T22:13:23Z"/>
     <author>
-        <reference value="PractitionerRole/practitioner-med-admin-henry-seven"/>
+        <reference value="Practitioner/practitioner-med-admin-henry-seven"/>
         <display value="Henry Seven, MD"/>
     </author>
     <title value="Inpatient Medication Administration"/>
@@ -31,7 +35,7 @@
             <coding>
                 <system value="http://loinc.org"/>
                 <code value="10160-0"/>
-                <display value="Medication use"/>
+                <display value="History of Medication use Narrative"/>
             </coding>
         </code>
         <entry>
@@ -82,8 +86,10 @@
         </code>
         <text>
             <status value="generated"/>
-            <div xmlns="http://www.w3.org/1999/xhtml">
-                <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+            <div
+                xmlns="http://www.w3.org/1999/xhtml">
+                <table
+                    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                     <tr>
                         <td style="font-weight: bold">title</td>
                         <td>
@@ -97,7 +103,9 @@
                                 <li>
                                     <ul style="list-style:none; padding-left:0; margin:0 0;">
                                         <li>
-                                            <div title="display">History of Present illness Narrative</div> ( <div title="code">10164-2</div> ) </li>
+                                            <div title="display">History of Present illness Narrative</div> ( 
+                                            <div title="code">10164-2</div> ) 
+                                        </li>
                                         <li>
                                             <div title="system">
                                                 <a href="http://loinc.org">http://loinc.org</a>
@@ -109,7 +117,11 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2" lang="en-US" class="text-no-entries"> Persistent Cough REPORTED starting on 2018/03/05 <br/> Whooping Respiration not reported <br/> Paroxysms Of Coughing REPORTED starting on 2018/03/06 <br/> Post-tussive vomiting not reported </td>
+                        <td colspan="2" lang="en-US" class="text-no-entries"> Persistent Cough REPORTED starting on 2018/03/05 
+                            <br/> Whooping Respiration not reported 
+                            <br/> Paroxysms Of Coughing REPORTED starting on 2018/03/06 
+                            <br/> Post-tussive vomiting not reported 
+                        </td>
                     </tr>
                 </table>
             </div>

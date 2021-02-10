@@ -4,7 +4,7 @@
     <id value="Condition-suspected-covid"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2021-12-23T22:13:38.732+00:00"/>
+        <lastUpdated value="2020-12-23T22:13:38.732+00:00"/>
         <source value="#eVTMBUocA4d5TMWp"/>
     </meta>
     <url value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Condition-suspected-covid"/>

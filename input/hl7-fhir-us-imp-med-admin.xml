@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-imp-med-admin"/>
     <meta>
-        <versionId value="18"/>
-        <lastUpdated value="2020-12-23T23:50:09.855+00:00"/>
-        <source value="#De6SdDPkIEEvNsJR"/>
+        <versionId value="22"/>
+        <lastUpdated value="2021-02-10T03:14:36.697+00:00"/>
+        <source value="#hEm2WyNflLelOYla"/>
     </meta>
     <url value="http://hl7.org/fhir/us/imp-med-admin/ImplementationGuide/hl7-fhir-us-imp-med-admin"/>
     <version value="0.1.0"/>
@@ -139,6 +139,38 @@
                 <reference value="MedicationAdministration/medicationadministration-azithromycin-med-admin-1"/></reference>
             <name value="Example of MedicationAdministration - Azithromycin"/>
             <description value="MedicationAdministration resource example - Azithromycin"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-lab-confirmed-covid-med-admin-1"/></reference>
+            <name value="Example of Condition - Lab Confirmed COVID"/>
+            <description value="Condition - Lab Confirmed COVID profile example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Condition-lab-confirmed-covid"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-hypertension-med-admin-1"/></reference>
+            <name value="Example of US Core Condition"/>
+            <description value="US Core Condition profile example - Hypertension"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/composition-med-admin-1"/>
+                <display value="Inpatient Medication Administration"/>
+            </reference>
+            <name value="Example of Composition - Inpatient Medication Administration"/>
+            <description value="Composition - Inpatient Medication Administration profile example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Composition-inpatient-med-admin"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/practitioner-med-admin-henry-seven"/></reference>
+            <name value="Example of US Core Practitioner"/>
+            <description value="US Core Practitioner profile example - Henry Seven"/>
             <exampleBoolean value="true"/>
         </resource>
         <page>

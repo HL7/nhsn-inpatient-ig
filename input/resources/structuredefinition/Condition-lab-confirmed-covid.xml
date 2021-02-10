@@ -4,7 +4,7 @@
     <id value="Condition-lab-confirmed-covid"/>
     <meta>
         <versionId value="4"/>
-        <lastUpdated value="2021-12-23T22:14:21.777+00:00"/>
+        <lastUpdated value="2020-12-23T22:14:21.777+00:00"/>
         <source value="#ubzkV7OTcY1ncDG1"/>
     </meta>
     <url value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Condition-lab-confirmed-covid"/>

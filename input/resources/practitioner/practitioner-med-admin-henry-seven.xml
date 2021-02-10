@@ -3,6 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="practitioner-med-admin-henry-seven"/>
     <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-02-10T03:08:19.831+00:00"/>
+        <source value="#vNf3iatcV2Dv62N6"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
     </meta>
     <identifier>

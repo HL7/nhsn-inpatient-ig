@@ -2,6 +2,11 @@
 <MedicationAdministration
     xmlns="http://hl7.org/fhir">
     <id value="medicationadministration-azithromycin-med-admin-1"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2021-02-10T03:08:19.617+00:00"/>
+        <source value="#I8dS1RseMvmmvJJC"/>
+    </meta>
     <status value="completed"/>
     <medicationCodeableConcept>
         <coding>

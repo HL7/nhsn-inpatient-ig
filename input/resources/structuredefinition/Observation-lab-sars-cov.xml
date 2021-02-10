@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-lab-sars-cov"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2021-12-23T23:12:21.416+00:00"/>
-        <source value="#GxzVpDNvk1WASQqh"/>
+        <versionId value="6"/>
+        <lastUpdated value="2021-02-10T03:48:55.122+00:00"/>
+        <source value="#fa7E7bEBARQE1tkx"/>
     </meta>
     <url value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Observation-lab-sars-cov"/>
     <version value="0.1.0"/>
@@ -127,7 +127,7 @@
         </element>
         <element id="Observation.code.coding:testSarsCov2Antigen">
             <path value="Observation.code.coding"/>
-            <sliceName value="COVID_19 (Tests for SARS_CoV_2 Antigen)"/>
+            <sliceName value="testSarsCov2Antigen"/>
             <max value="1"/>
             <mustSupport value="true"/>
             <binding>

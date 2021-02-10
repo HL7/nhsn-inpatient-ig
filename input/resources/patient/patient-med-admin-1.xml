@@ -3,6 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="patient-med-admin-1"/>
     <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-12-23T21:27:41.254+00:00"/>
+        <source value="#e5lm4KzXeLhJI81V"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
     </meta>
     <text>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-inpatient-med-admin"/>
     <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2021-12-24T01:55:52.825+00:00"/>
-        <source value="#VjzSxMcJH3ancaSr"/>
+        <versionId value="15"/>
+        <lastUpdated value="2021-02-10T03:36:16.473+00:00"/>
+        <source value="#KqbUQsX7nBPXfDfG"/>
     </meta>
     <url value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Composition-inpatient-med-admin"/>
     <version value="0.1.0"/>
@@ -71,7 +71,7 @@
             <path value="Composition.section"/>
             <slicing>
                 <discriminator>
-                    <type value="value"/>
+                    <type value="pattern"/>
                     <path value="code"/>
                 </discriminator>
                 <rules value="open"/>
@@ -107,7 +107,7 @@
         </element>
         <element id="Composition.section:medicationSection.text">
             <path value="Composition.section.text"/>
-            <min value="1"/>
+            <min value="0"/>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:medicationSection.entry">
@@ -164,45 +164,17 @@
         </element>
         <element id="Composition.section:problemSection.text">
             <path value="Composition.section.text"/>
-            <min value="1"/>
+            <min value="0"/>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:problemSection.entry">
             <path value="Composition.section.entry"/>
-            <slicing>
-                <discriminator>
-                    <type value="profile"/>
-                    <path value="resolve()"/>
-                </discriminator>
-                <rules value="open"/>
-            </slicing>
             <min value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:problemSection.entry:USCoreCondition">
-            <path value="Composition.section.entry"/>
-            <sliceName value="USCoreCondition"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:problemSection.entry:ConditionLabConfirmedCovid">
-            <path value="Composition.section.entry"/>
-            <sliceName value="ConditionLabConfirmedCovid"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Condition-lab-confirmed-covid"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:problemSection.entry:ConditionSuspectedCovid">
-            <path value="Composition.section.entry"/>
-            <sliceName value="ConditionSuspectedCovid"/>
-            <type>
-                <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Condition-suspected-covid"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -234,7 +206,7 @@
         </element>
         <element id="Composition.section:resultSection.text">
             <path value="Composition.section.text"/>
-            <min value="1"/>
+            <min value="0"/>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:resultSection.entry">
@@ -293,7 +265,7 @@
         </element>
         <element id="Composition.section:adverseEventSection.text">
             <path value="Composition.section.text"/>
-            <min value="1"/>
+            <min value="0"/>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:adverseEventSection.entry">
