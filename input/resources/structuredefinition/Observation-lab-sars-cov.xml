@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-lab-sars-cov"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2021-02-10T03:48:55.122+00:00"/>
-        <source value="#fa7E7bEBARQE1tkx"/>
+        <versionId value="7"/>
+        <lastUpdated value="2021-02-11T08:36:24.461+00:00"/>
+        <source value="#reD0Wc2MPncxpZpO"/>
     </meta>
     <url value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Observation-lab-sars-cov"/>
     <version value="0.1.0"/>
@@ -58,6 +58,9 @@
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+            </binding>
         </element>
         <element id="Observation.code.coding:testSarsCov2NucleicAcid">
             <path value="Observation.code.coding"/>
@@ -90,17 +93,6 @@
                 <strength value="required"/>
                 <description value="COVID_19 (Tests for SARS_CoV_2 IgG Antibody)"/>
                 <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1152"/>
-            </binding>
-        </element>
-        <element id="Observation.code.coding:testSarsCov2IgMAntibody">
-            <path value="Observation.code.coding"/>
-            <sliceName value="testSarsCov2IgMAntibody"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-            <binding>
-                <strength value="required"/>
-                <description value="COVID_19 (Tests for SARS_CoV_2 IgM Antibody)"/>
-                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1153"/>
             </binding>
         </element>
         <element id="Observation.code.coding:testPanelsSarsCov2Antibody">

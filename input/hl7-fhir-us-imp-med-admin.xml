@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-imp-med-admin"/>
     <meta>
-        <versionId value="22"/>
-        <lastUpdated value="2021-02-10T03:14:36.697+00:00"/>
-        <source value="#hEm2WyNflLelOYla"/>
+        <versionId value="27"/>
+        <lastUpdated value="2021-02-10T20:00:50.546+00:00"/>
+        <source value="#RxTmmo44Ljk09bgr"/>
     </meta>
     <url value="http://hl7.org/fhir/us/imp-med-admin/ImplementationGuide/hl7-fhir-us-imp-med-admin"/>
     <version value="0.1.0"/>
@@ -172,6 +172,19 @@
             <name value="Example of US Core Practitioner"/>
             <description value="US Core Practitioner profile example - Henry Seven"/>
             <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-document-med-admin-patient-med-admin-1"/></reference>
+            <name value="Example of Bundle"/>
+            <description value="Bundle Example"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationRequest/medicationrequest-med-admin-1"/></reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

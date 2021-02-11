@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationRequest
+    xmlns="http://hl7.org/fhir">
+    <id value="medicationrequest-med-admin-1"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2021-02-10T20:01:54.457+00:00"/>
+        <source value="#PJQ6OAeIVx7Wck5e"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
+    </meta>
+    <status value="completed"/>
+    <intent value="order"/>
+    <medicationCodeableConcept>
+        <coding>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="617311"/>
+            <display value="atorvastatin calcium 40 MG Oral Tablet"/>
+        </coding>
+        <text value="atorvastatin calcium 40 MG Oral Tablet"/>
+    </medicationCodeableConcept>
+    <subject>
+        <reference value="Patient/patient-med-admin-1"/>
+        <display value="Name: 'masked'"/>
+    </subject>
+    <encounter>
+        <reference value="Encounter/encounter-completed-inpatient-med-admin-1"/>
+        <display value="Inpatient encounter for name 'masked'"/>
+    </encounter>
+    <authoredOn value="2021-01-03"/>
+    <dosageInstruction>
+        <route>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="26643006"/>
+                <display value="Oral route (qualifier value)"/>
+            </coding>
+            <text value="Oral route (qualifier value)"/>
+        </route>
+        <doseAndRate>
+            <doseQuantity>
+                <value value="40"/>
+                <unit value="MG"/>
+            </doseQuantity>
+        </doseAndRate>
+    </dosageInstruction>
+</MedicationRequest>
