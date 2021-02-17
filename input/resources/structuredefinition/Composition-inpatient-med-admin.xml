@@ -221,21 +221,13 @@
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:resultSection.entry:USCoreObservationLab">
+        <element id="Composition.section:resultSection.entry:ObservationLab">
             <path value="Composition.section.entry"/>
-            <sliceName value="USCoreObservationLab"/>
+            <sliceName value="ObservationLab"/>
             <min value="0"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:resultSection.entry:ObservationLabSarsCov">
-            <path value="Composition.section.entry"/>
-            <sliceName value="ObservationLabSarsCov"/>
-            <type>
-                <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Observation-lab-sars-cov"/>
             </type>
             <mustSupport value="true"/>
