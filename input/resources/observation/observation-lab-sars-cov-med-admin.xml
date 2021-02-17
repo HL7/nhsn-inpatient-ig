@@ -30,4 +30,12 @@
         <display value="Name: 'masked'"/>
     </subject>
     <effectiveDateTime value="2021-01-04"/>
+    <valueCodeableConcept>
+        <coding> 
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+            <code value="POS"/> 
+            <display value="positive"/>
+        </coding> 
+        <text value="positive"/>
+    </valueCodeableConcept>
 </Observation>
