@@ -58,9 +58,6 @@
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
-            <binding>
-                <strength value="required"/>
-            </binding>
         </element>
         <element id="Observation.code.coding:testSarsCov2NucleicAcid">
             <path value="Observation.code.coding"/>
