@@ -169,6 +169,19 @@
         </element>
         <element id="Composition.section:problemSection.entry">
             <path value="Composition.section.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="resolve()"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:problemSection.entry:Condition">
+            <path value="Composition.section.entry"/>
+            <sliceName value="Condition"/>
             <min value="1"/>
             <type>
                 <code value="Reference"/>
