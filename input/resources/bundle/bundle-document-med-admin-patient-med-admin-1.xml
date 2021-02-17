@@ -143,6 +143,10 @@
                <display value="Inpatient encounter for name 'masked'"/>
             </encounter>
             <authoredOn value="2021-01-03"/>
+            <requester>
+               <reference value="Practitioner/practitioner-med-admin-henry-seven"/>
+               <display value="Henry Seven, MD"/>
+            </requester>
             <dosageInstruction>
                <route>
                   <coding>

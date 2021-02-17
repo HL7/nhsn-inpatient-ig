@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-imp-med-admin"/>
     <meta>
-        <versionId value="27"/>
-        <lastUpdated value="2021-02-10T20:00:50.546+00:00"/>
-        <source value="#RxTmmo44Ljk09bgr"/>
+        <versionId value="29"/>
+        <lastUpdated value="2021-02-17T02:16:20.130+00:00"/>
+        <source value="#Jx7DAVIzNs6iYPQA"/>
     </meta>
     <url value="http://hl7.org/fhir/us/imp-med-admin/ImplementationGuide/hl7-fhir-us-imp-med-admin"/>
     <version value="0.1.0"/>
@@ -183,8 +183,9 @@
         <resource>
             <reference>
                 <reference value="MedicationRequest/medicationrequest-med-admin-1"/></reference>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
+            <name value="Example of US Core MedicationRequest"/>
+            <description value="US Core MedicationRequest profile example"/>
+            <exampleBoolean value="true"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
