@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Condition
+    xmlns="http://hl7.org/fhir">
+    <id value="condition-suspected-covid-med-admin-1"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-03-22T08:25:08.397+00:00"/>
+        <source value="#dClq0xOzxqrJWuaR"/>
+        <profile value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Condition-suspected-covid"/>
+    </meta>
+    <clinicalStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+        </coding>
+    </clinicalStatus>
+    <verificationStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="unconfirmed"/>
+        </coding>
+    </verificationStatus>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="encounter-diagnosis"/>
+            <display value="Encounter Diagnosis"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="840544004"/>
+            <display value="Suspected disease caused by Severe acute respiratory coronavirus 2 (situation)"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/patient-med-admin-1"/>
+        <display value="Name: 'masked'"/>
+    </subject>
+    <encounter>
+        <reference value="Encounter/encounter-completed-inpatient-med-admin-1"/>
+    </encounter>
+    <onsetDateTime value="2021-01-02T10:30:35-06:00"/>
+    <recordedDate value="2021-01-02T10:30:35-06:00"/>
+</Condition>

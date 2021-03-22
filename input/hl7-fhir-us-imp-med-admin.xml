@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-imp-med-admin"/>
     <meta>
-        <versionId value="31"/>
-        <lastUpdated value="2021-03-22T07:38:08.673+00:00"/>
-        <source value="#8A6JkIuVFQ5nXUhg"/>
+        <versionId value="33"/>
+        <lastUpdated value="2021-03-22T08:25:54.671+00:00"/>
+        <source value="#Doj5ZWUdnsg6XacJ"/>
     </meta>
     <url value="http://hl7.org/fhir/us/imp-med-admin/ImplementationGuide/hl7-fhir-us-imp-med-admin"/>
     <version value="0.1.0"/>
@@ -186,6 +186,14 @@
             <name value="Example of US Core MedicationRequest"/>
             <description value="US Core MedicationRequest profile example"/>
             <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-suspected-covid-med-admin-1"/></reference>
+            <name value="Example of Condition - Suspected COVID"/>
+            <description value="Condition - Suspected COVID profile example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Condition-suspected-covid"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
