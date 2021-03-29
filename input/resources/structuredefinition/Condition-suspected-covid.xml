@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Condition-suspected-covid"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-12-23T22:13:38.732+00:00"/>
-        <source value="#eVTMBUocA4d5TMWp"/>
+        <versionId value="2"/>
+        <lastUpdated value="2021-03-29T23:12:13.830+00:00"/>
+        <source value="#ShB7DgAhzj0vTUCC"/>
     </meta>
     <url value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Condition-suspected-covid"/>
     <version value="0.1.0"/>

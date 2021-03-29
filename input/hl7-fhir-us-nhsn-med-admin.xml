@@ -3,15 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-nhsn-med-admin"/>
     <meta>
-        <versionId value="33"/>
-        <lastUpdated value="2021-03-22T08:25:54.671+00:00"/>
-        <source value="#Doj5ZWUdnsg6XacJ"/>
+        <versionId value="6"/>
+        <lastUpdated value="2021-03-29T23:22:18.746+00:00"/>
+        <source value="#49AuYWrHd0WJegu8"/>
     </meta>
     <url value="http://hl7.org/fhir/us/nhsn-med-admin/ImplementationGuide/hl7-fhir-us-nhsn-med-admin"/>
     <version value="0.1.0"/>
     <name value="InpatientMedicationAdministrationNHSN"/>
     <title value="NHSN Reporting: Inpatient Medication Administration"/>
     <status value="draft"/>
+    <date value="2021-03-30"/>
     <publisher value="HL7 International - Pharmacy Work Group"/>
     <contact>
         <name value="HL7 International - Pharmacy"/>

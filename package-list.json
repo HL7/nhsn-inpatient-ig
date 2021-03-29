@@ -4,7 +4,7 @@
 			"version": "current",
 			"path": "https://build.fhir.org/ig/HL7/nhsn-med-admin",
 			"desc": "",
-			"fhirversion": "4",
+			"fhirversion": "4.0.1",
 			"date": "",
 			"sequence": "",
 			"status": "ci-build",
@@ -12,13 +12,12 @@
 		},
 		{
 			"version": "0.1.0",
-			"current": false,
 			"desc": "Ballot for FHIR STU Release 1",
-			"date": "30-Mar-2021",
 			"path": "http://hl7.org/fhir/us/nhsn-med-admin/2021May",
 			"fhirversion": "4.0.1",
-			"status": "ballot",
-			"sequence": "STU 1 on FHIR R4"
+			"date": "2021-03-01",
+			"sequence": "STU 1 on FHIR R4",
+			"status": "ballot"
 		}
 	],
 	"package-id": "hl7.fhir.us.nhsn-med-admin",

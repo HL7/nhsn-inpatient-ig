@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-lab-sars-cov"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2021-02-17T03:42:05.050+00:00"/>
-        <source value="#oJJdMownO894VqNe"/>
+        <versionId value="9"/>
+        <lastUpdated value="2021-03-29T23:12:31.626+00:00"/>
+        <source value="#bfR7hH7IfnWqSyzv"/>
     </meta>
     <url value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Observation-lab-sars-cov"/>
     <version value="0.1.0"/>

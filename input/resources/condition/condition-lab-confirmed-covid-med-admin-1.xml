@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="condition-lab-confirmed-covid-med-admin-1"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-02-10T03:08:19.640+00:00"/>
-        <source value="#VyoD8PFLycGH9Sxr"/>
+        <versionId value="2"/>
+        <lastUpdated value="2021-03-29T23:13:31.888+00:00"/>
+        <source value="#Z9XcFWKgR7Axivat"/>
         <profile value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Condition-lab-confirmed-covid"/>
     </meta>
     <clinicalStatus>
