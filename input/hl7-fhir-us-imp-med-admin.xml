@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide
     xmlns="http://hl7.org/fhir">
-    <id value="hl7-fhir-us-imp-med-admin"/>
+    <id value="hl7-fhir-us-nhsn-med-admin"/>
     <meta>
         <versionId value="33"/>
         <lastUpdated value="2021-03-22T08:25:54.671+00:00"/>
         <source value="#Doj5ZWUdnsg6XacJ"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/imp-med-admin/ImplementationGuide/hl7-fhir-us-imp-med-admin"/>
+    <url value="http://hl7.org/fhir/us/nhsn-med-admin/ImplementationGuide/hl7-fhir-us-nhsn-med-admin"/>
     <version value="0.1.0"/>
     <name value="InpatientMedicationAdministrationNHSN"/>
     <title value="NHSN Reporting: Inpatient Medication Administration"/>
@@ -29,7 +29,7 @@
         </coding>
         <text value="United States of America"/>
     </jurisdiction>
-    <packageId value="hl7.fhir.us.imp-med-admin"/>
+    <packageId value="hl7.fhir.us.nhsn-med-admin"/>
     <fhirVersion value="4.0.1"/>
     <dependsOn id="hl7fhiruscore">
         <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#3.1.1"/>
@@ -125,7 +125,7 @@
             <name value="Example of Observation - Lab SARS COV"/>
             <description value="Observation - Lab SARS COV profile example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Observation-lab-sars-cov"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Observation-lab-sars-cov"/>
         </resource>
         <resource>
             <reference>
@@ -147,7 +147,7 @@
             <name value="Example of Condition - Lab Confirmed COVID"/>
             <description value="Condition - Lab Confirmed COVID profile example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Condition-lab-confirmed-covid"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Condition-lab-confirmed-covid"/>
         </resource>
         <resource>
             <reference>
@@ -164,7 +164,7 @@
             <name value="Example of Composition - Inpatient Medication Administration"/>
             <description value="Composition - Inpatient Medication Administration profile example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Composition-inpatient-med-admin"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Composition-inpatient-med-admin"/>
         </resource>
         <resource>
             <reference>
@@ -193,7 +193,7 @@
             <name value="Example of Condition - Suspected COVID"/>
             <description value="Condition - Suspected COVID profile example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Condition-suspected-covid"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Condition-suspected-covid"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

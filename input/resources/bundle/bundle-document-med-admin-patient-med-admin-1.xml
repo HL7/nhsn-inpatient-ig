@@ -13,7 +13,7 @@
          <Composition>
             <id value="composition-med-admin-patient-med-admin-1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Composition-inpatient-med-admin"/>
+               <profile value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Composition-inpatient-med-admin"/>
             </meta>
             <status value="final"/>
             <type>
@@ -86,7 +86,7 @@
                <versionId value="2"/>
                <lastUpdated value="2021-02-09T22:58:16.108+00:00"/>
                <source value="#u3evrv7hPoMqWY9W"/>
-               <profile value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Observation-lab-sars-cov"/>
+               <profile value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Observation-lab-sars-cov"/>
             </meta>
             <status value="final"/>
             <category>

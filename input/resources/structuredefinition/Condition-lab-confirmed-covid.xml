@@ -7,7 +7,7 @@
         <lastUpdated value="2020-12-23T22:14:21.777+00:00"/>
         <source value="#ubzkV7OTcY1ncDG1"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Condition-lab-confirmed-covid"/>
+    <url value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Condition-lab-confirmed-covid"/>
     <version value="0.1.0"/>
     <name value="ConditionLabConfirmedCovid"/>
     <title value="Condition - Lab Confirmed COVID-19"/>

@@ -7,7 +7,7 @@
         <lastUpdated value="2020-12-23T22:13:38.732+00:00"/>
         <source value="#eVTMBUocA4d5TMWp"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Condition-suspected-covid"/>
+    <url value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Condition-suspected-covid"/>
     <version value="0.1.0"/>
     <name value="ConditionSuspectedCovid"/>
     <title value="Condition - Suspected COVID-19"/>

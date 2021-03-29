@@ -6,7 +6,7 @@
         <versionId value="3"/>
         <lastUpdated value="2021-02-17T03:11:03.303+00:00"/>
         <source value="#SUd5fiybz0S9guD7"/>
-        <profile value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Observation-lab-sars-cov"/>
+        <profile value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Observation-lab-sars-cov"/>
     </meta>
     <status value="final"/>
     <category>

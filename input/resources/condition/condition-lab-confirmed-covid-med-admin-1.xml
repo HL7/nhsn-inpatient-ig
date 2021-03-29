@@ -6,7 +6,7 @@
         <versionId value="1"/>
         <lastUpdated value="2021-02-10T03:08:19.640+00:00"/>
         <source value="#VyoD8PFLycGH9Sxr"/>
-        <profile value="http://hl7.org/fhir/us/imp-med-admin/StructureDefinition/Condition-lab-confirmed-covid"/>
+        <profile value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Condition-lab-confirmed-covid"/>
     </meta>
     <clinicalStatus>
         <coding>
