@@ -13,5 +13,6 @@
 	],
 	"package-id": "hl7.fhir.us.imp-med-admin",
 	"title": "NHSN Reporting: Inpatient Medication Administration",
-	"canonical": "http://hl7.org/fhir/us/ade-hypo/ImplementationGuide/hl7-fhir-us-imp-med-admin"
+	"canonical": "https://build.fhir.org/ig/HL7/imp-med-admin",
+	"category": "Public Health"
 }
