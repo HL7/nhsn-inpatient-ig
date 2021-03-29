@@ -9,10 +9,19 @@
 			"sequence": "",
 			"status": "ci-build",
 			"current": true
+		},
+		{
+			"version": "0.1.0",
+			"current": false,
+			"desc": "Ballot for FHIR STU Release 1",
+			"path": "http://hl7.org/fhir/us/imp-med-admin/2021May",
+			"fhirversion": "4.0.1",
+			"status": "ballot",
+			"sequence": "STU 1 on FHIR R4"
 		}
 	],
 	"package-id": "hl7.fhir.us.imp-med-admin",
 	"title": "NHSN Reporting: Inpatient Medication Administration",
-	"canonical": "https://build.fhir.org/ig/HL7/imp-med-admin",
+	"canonical": "http://hl7.org/fhir/us/imp-med-admin",
 	"category": "Public Health"
 }
