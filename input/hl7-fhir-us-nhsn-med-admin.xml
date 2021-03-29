@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide
+    xmlns="http://hl7.org/fhir">
+    <id value="hl7-fhir-us-nhsn-med-admin"/>
+    <meta>
+        <versionId value="33"/>
+        <lastUpdated value="2021-03-22T08:25:54.671+00:00"/>
+        <source value="#Doj5ZWUdnsg6XacJ"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/nhsn-med-admin/ImplementationGuide/hl7-fhir-us-nhsn-med-admin"/>
+    <version value="0.1.0"/>
+    <name value="InpatientMedicationAdministrationNHSN"/>
+    <title value="NHSN Reporting: Inpatient Medication Administration"/>
+    <status value="draft"/>
+    <publisher value="HL7 International - Pharmacy Work Group"/>
+    <contact>
+        <name value="HL7 International - Pharmacy"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/medication"/>
+        </telecom>
+    </contact>
+    <description value="This IG will support electronic submission of patient/line-level medication administration data to the National Healthcare Safety Network (NHSN). The intent of this project is to establish an electronic submission standard that is vendor-neutral that leverages existing workflows and eliminates duplicate documentation. This project will work with EHR vendors to identify data elements that can be used to describe medications administered (name, formulation, route, dose, duration) to hospitalized patients (inpatients) diagnosed with COVID-19 as part of NHSN COVID-19 reporting pathways. Medication administration events would be reported irrespective of whether or not medication administration was linked to an adverse event, refer to clinician-administered events (e.g., nurse giving a patient their medication dose), and only those occurring in inpatient settings; this excludes: emergency department, observation/short stay, inpatient rehabilitation, outpatient surgical centers, and other outpatient (including physician office) settings.&#xA;&#xA;Medication data are integral to informing the quality, safety, and costs of U.S. healthcare, supporting federal, state, and local public health, and guiding clinical decision-making in patient care. In inpatient workflows, medication administration—as captured by electronic medication administration (eMAR) records—is considered the gold standard for accurately measuring in-hospital medication exposure, including identifying the exact medications patients have received, in what formulations, doses, and for what duration of time. The need for medication administration information has never been clearer as during the COVID-19 pandemic, where identification of the medications that acutely ill hospitalized patients with COVID-19 had received was integral to understanding clinical management of this new public health threat and directing public health resources, including scarce medications. The continued reliance on the &quot;medication list&quot; resource instead of the &quot;medication administration&quot; resource is a severe limitation in achieving accurate representation of medication exposure in U.S. healthcare data through FHIR resources."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="United States of America"/>
+    </jurisdiction>
+    <packageId value="hl7.fhir.us.nhsn-med-admin"/>
+    <fhirVersion value="4.0.1"/>
+    <dependsOn id="hl7fhiruscore">
+        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#3.1.1"/>
+        <packageId value="hl7.fhir.us.core"/>
+        <version value="3.1.1"/>
+    </dependsOn>
+    <dependsOn id="usnlmvsac">
+        <uri value="http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac"/>
+        <packageId value="us.nlm.vsac"/>
+        <version value="0.4.0"/>
+    </dependsOn>
+    <definition>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Composition-inpatient-med-admin"/>
+                <display value="Composition - Inpatient Medication Administration"/>
+            </reference>
+            <name value="Composition - Inpatient Medication Administration"/>
+            <description value="This profile supports the electronic submission of line-level medication administration data to the National Healthcare Safety Network (NHSN)."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-med-admin-1"/></reference>
+            <name value="Example of US Core Patient - Name 'masked'"/>
+            <description value="US Core Patient profile example - identifier and name &quot;masked&quot;"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-lab-confirmed-covid"/>
+                <display value="Condition - Lab Confirmed COVID-19"/>
+            </reference>
+            <name value="Condition - Lab Confirmed COVID-19"/>
+            <description value="This Condition profile represents a laboratory confirmed COVID-19 diagnosis."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-suspected-covid"/>
+                <display value="Condition - Suspected COVID-19"/>
+            </reference>
+            <name value="Condition - Suspected COVID-19"/>
+            <description value="This Condition profile represents a suspected COVID-19 diagnosis."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-lab-sars-cov"/>
+                <display value="Observation Laboratory SARS COVID-19"/>
+            </reference>
+            <name value="Observation - Laboratory SARS COVID-19"/>
+            <description value="This profile reprsents a SARS COVID-19 lab test"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/organization-acme-laboratory"/>
+                <display value="Acme_Labs"/>
+            </reference>
+            <name value="Example of US Core Organization - Acme Laboratory"/>
+            <description value="US Core Organization profile example - Acme Laboratory"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Encounter/encounter-completed-inpatient-med-admin-1"/></reference>
+            <name value="Example of US Core Encounter - Name 'masked'"/>
+            <description value="US Core Encounter profile example - Name 'masked'"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Location/location-salem-medical-center"/>
+                <display value="Clinic Bldg A, Salem Medical Center"/>
+            </reference>
+            <name value="Example of US Core Location - Salem Medical Center"/>
+            <description value="US Core Location profile example - Salem Medical Center"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/organization-salem-medical-center"/>
+                <display value="Salem Medical Center"/>
+            </reference>
+            <name value="Example of US Core Organization - Salem Medical Center"/>
+            <description value="US Core Organization profile example - Salem Medical Center"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-lab-sars-cov-med-admin"/></reference>
+            <name value="Example of Observation - Lab SARS COV"/>
+            <description value="Observation - Lab SARS COV profile example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Observation-lab-sars-cov"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationAdministration/medicationadministration-remdesivir-med-admin-1"/></reference>
+            <name value="Example of MedicationAdministration - Remdesivir"/>
+            <description value="MedicationAdministration resource example - Remdesivir"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationAdministration/medicationadministration-azithromycin-med-admin-1"/></reference>
+            <name value="Example of MedicationAdministration - Azithromycin"/>
+            <description value="MedicationAdministration resource example - Azithromycin"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-lab-confirmed-covid-med-admin-1"/></reference>
+            <name value="Example of Condition - Lab Confirmed COVID"/>
+            <description value="Condition - Lab Confirmed COVID profile example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Condition-lab-confirmed-covid"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-hypertension-med-admin-1"/></reference>
+            <name value="Example of US Core Condition"/>
+            <description value="US Core Condition profile example - Hypertension"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/composition-med-admin-1"/>
+                <display value="Inpatient Medication Administration"/>
+            </reference>
+            <name value="Example of Composition - Inpatient Medication Administration"/>
+            <description value="Composition - Inpatient Medication Administration profile example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Composition-inpatient-med-admin"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/practitioner-med-admin-henry-seven"/></reference>
+            <name value="Example of US Core Practitioner"/>
+            <description value="US Core Practitioner profile example - Henry Seven"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-document-med-admin-patient-med-admin-1"/></reference>
+            <name value="Example of Bundle"/>
+            <description value="Bundle Example"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationRequest/medicationrequest-med-admin-1"/></reference>
+            <name value="Example of US Core MedicationRequest"/>
+            <description value="US Core MedicationRequest profile example"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-suspected-covid-med-admin-1"/></reference>
+            <name value="Example of Condition - Suspected COVID"/>
+            <description value="Condition - Suspected COVID profile example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Condition-suspected-covid"/>
+        </resource>
+        <page>
+            <nameUrl value="index.html"/>
+            <title value="Home Page"/>
+            <generation value="markdown"/>
+        </page>
+        <parameter>
+            <code value="copyrightyear"/>
+            <value value="2020+"/>
+        </parameter>
+        <parameter>
+            <code value="releaselabel"/>
+            <value value="CI Build"/>
+        </parameter>
+    </definition>
+</ImplementationGuide>
