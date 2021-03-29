@@ -11,10 +11,10 @@
     <medicationCodeableConcept>
         <coding>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-            <code value="2395502"/>
-            <display value="remdesivir 100 MG Injection [Veklury]"/>
+            <code value="2284960"/>
+            <display value="remdesivir 100 MG Injection (RXCUI 2284960)"/>
         </coding>
-        <text value="remdesivir 100 MG Injection [Veklury]"/>
+        <text value="remdesivir 100 MG Injection (RXCUI 2284960)"/>
     </medicationCodeableConcept>
     <subject>
         <reference value="Patient/patient-med-admin-1"/>
