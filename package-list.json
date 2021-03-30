@@ -2,7 +2,7 @@
 	"list": [
 		{
 			"version": "current",
-			"path": "https://build.fhir.org/ig/HL7/nhsn-med-admin",
+			"path": "http://build.fhir.org/ig/HL7/nhsn-med-admin",
 			"desc": "",
 			"fhirversion": "4.0.1",
 			"date": "",
@@ -23,5 +23,5 @@
 	"package-id": "hl7.fhir.us.nhsn-med-admin",
 	"title": "NHSN Reporting: Inpatient Medication Administration",
 	"canonical": "http://hl7.org/fhir/us/nhsn-med-admin",
-	"category": "Public Health"
+	"category": "Pharmacy"
 }
