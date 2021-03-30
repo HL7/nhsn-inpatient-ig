@@ -6,7 +6,7 @@
 			"desc": "",
 			"fhirversion": "4.0.1",
 			"date": "",
-			"sequence": "",
+			"sequence": "STU 1 on FHIR R4",
 			"status": "ci-build",
 			"current": true
 		},
@@ -15,9 +15,9 @@
 			"desc": "Ballot for FHIR STU Release 1",
 			"path": "http://hl7.org/fhir/us/nhsn-med-admin/2021May",
 			"fhirversion": "4.0.1",
-			"date": "2021-03-01",
 			"sequence": "STU 1 on FHIR R4",
-			"status": "ballot"
+			"status": "ballot",
+			"date": "2021-03-30"
 		}
 	],
 	"package-id": "hl7.fhir.us.nhsn-med-admin",

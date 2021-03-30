@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-nhsn-med-admin"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2021-03-29T23:22:18.746+00:00"/>
-        <source value="#49AuYWrHd0WJegu8"/>
+        <versionId value="16"/>
+        <lastUpdated value="2021-03-30T04:29:40.215+00:00"/>
+        <source value="#RoVePL728z5nSmuV"/>
     </meta>
     <url value="http://hl7.org/fhir/us/nhsn-med-admin/ImplementationGuide/hl7-fhir-us-nhsn-med-admin"/>
     <version value="0.1.0"/>
@@ -200,6 +200,16 @@
             <nameUrl value="index.html"/>
             <title value="Home Page"/>
             <generation value="markdown"/>
+            <page>
+                <nameUrl value="background.html"/>
+                <title value="Background"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="downloads.html"/>
+                <title value="Downloads"/>
+                <generation value="markdown"/>
+            </page>
         </page>
         <parameter>
             <code value="copyrightyear"/>
