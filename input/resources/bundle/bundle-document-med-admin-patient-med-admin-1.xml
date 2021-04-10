@@ -5,15 +5,13 @@
       <value value="urn:uuid:21759053-6C48-11EB-2236-09173F13E4C5"/>
    </identifier>
    <type value="document" />
+   <timestamp value="2021-02-11T19:04:21.973+10:00"/>
    <entry>
       <fullUrl value="http://example.org/fhir/Composition/composition-med-admin-1" />
       <resource>
          <Composition>
             <id value="composition-med-admin-1" />
             <meta>
-               <versionId value="5" />
-               <lastUpdated value="2021-03-29T23:13:31.867+00:00" />
-               <source value="#NwEdyfKRF4YIa8dW" />
                <profile value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Composition-inpatient-med-admin" />
             </meta>
             <status value="final" />
