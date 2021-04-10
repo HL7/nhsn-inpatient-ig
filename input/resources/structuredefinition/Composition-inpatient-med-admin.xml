@@ -178,6 +178,7 @@
         <element id="Composition.section:problemSection.entry:Condition">
             <path value="Composition.section.entry"/>
             <sliceName value="Condition"/>
+            <min value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Condition-lab-confirmed-covid"/>
