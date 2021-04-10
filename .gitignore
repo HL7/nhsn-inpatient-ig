@@ -4,3 +4,11 @@
 /bundle
 /202103300945input/resources/practitioner
 /202103300945input
+/input-cache
+/org.hl7.fhir.publisher.jar
+/output
+/temp
+/template
+/publisher.bat
+/publisher.sh
+/FHIR-us-nhsn-med-admin.xml
