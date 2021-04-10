@@ -175,29 +175,13 @@
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:problemSection.entry:ConditionCovidConf">
+        <element id="Composition.section:problemSection.entry:Condition">
             <path value="Composition.section.entry"/>
-            <sliceName value="ConditionCovidConf"/>
+            <sliceName value="Condition"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Condition-lab-confirmed-covid"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:problemSection.entry:ConditionCovidSusp">
-            <path value="Composition.section.entry"/>
-            <sliceName value="ConditionCovidSusp"/>
-            <type>
-                <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Condition-suspected-covid"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:problemSection.entry:ConditionOther">
-            <path value="Composition.section.entry"/>
-            <sliceName value="ConditionOther"/>
-            <type>
-                <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
             </type>
             <mustSupport value="true"/>
