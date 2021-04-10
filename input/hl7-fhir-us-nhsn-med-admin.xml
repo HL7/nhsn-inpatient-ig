@@ -219,5 +219,9 @@
             <code value="releaselabel"/>
             <value value="CI Build"/>
         </parameter>
+        <parameter>
+            <code value="path-expansion-params"/>
+            <value value="expansion-parameters-med-admin.xml"/>
+        </parameter>
     </definition>
 </ImplementationGuide>
