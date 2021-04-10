@@ -13,6 +13,7 @@ WARNING: StructureDefinition/Observation-lab-sars-cov: StructureDefinition.snaps
 INFORMATION: Organization/organization-acme-laboratory: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
 INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[8].resource.ofType(Organization).identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
 INFORMATION: Organization/organization-salem-medical-center: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
+INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[9].resource.ofType(Organization).identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
 # Suppress informational messages
 INFORMATION: ImplementationGuide/hl7.fhir.us.nhsn-med-admin: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle
@@ -60,3 +61,19 @@ INFORMATION: StructureDefinition/Composition-inpatient-med-admin: StructureDefin
 INFORMATION: StructureDefinition/Condition-lab-confirmed-covid: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 INFORMATION: StructureDefinition/Condition-suspected-covid: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 INFORMATION: StructureDefinition/Observation-lab-sars-cov: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[1].resource.ofType(MedicationAdministration): Validate resource against profile http://hl7.org/fhir/StructureDefinition/MedicationAdministration
+INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[2].resource.ofType(Encounter): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Encounter
+INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[2].resource.ofType(Encounter): Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter - listed in meta
+INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[3].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[3].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient - listed in meta
+INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[4].resource.ofType(Practitioner): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner
+INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[4].resource.ofType(Practitioner): Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner - listed in meta
+INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[5].resource.ofType(Observation): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[5].resource.ofType(Observation): Validate resource against profile http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Observation-lab-sars-cov - listed in meta
+INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[6].resource.ofType(Condition): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Condition
+INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[6].resource.ofType(Condition): Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition - listed in meta
+INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[7].resource.ofType(MedicationAdministration): Validate resource against profile http://hl7.org/fhir/StructureDefinition/MedicationAdministration
+INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[8].resource.ofType(Location): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Location
+INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[8].resource.ofType(Location): Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-location - listed in meta
+INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[9].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[9].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization - listed in meta
