@@ -165,11 +165,27 @@
         </element>
         <element id="Composition.section:problemSection.entry">
             <path value="Composition.section.entry"/>
+            <slicing>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:problemSection.entry:ConditionCovid">
+            <path value="Composition.section.entry"/>
+            <sliceName value="ConditionCovid"/>
             <min value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Condition-lab-confirmed-covid"/>
                 <targetProfile value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Condition-suspected-covid"/>
+            </type>
+        </element>
+        <element id="Composition.section:problemSection.entry:ConditionOther">
+            <path value="Composition.section.entry"/>
+            <sliceName value="ConditionOther"/>
+            <type>
+                <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
             </type>
             <mustSupport value="true"/>

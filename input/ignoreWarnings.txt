@@ -1,4 +1,18 @@
 == Suppressed Messages ==
+
+WARNING: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[0].resource.ofType(Composition).section[1].entry[0]: Found multiple matching profiles for Condition/condition-hypertension-med-admin-1 among choices: http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition, http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Condition-suspected-covid, http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Condition-lab-confirmed-covid
+WARNING: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[0].resource.ofType(Composition).section[2].entry[0]: Found multiple matching profiles for Observation/observation-lab-sars-cov-med-admin among choices: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab, http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Observation-lab-sars-cov
+# See Zulip thread: https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/US-Core.20ValueSets.20not.20recognized.20by.20validator
+WARNING: Bundle/bundle-document-med-admin-patient-med-admin-1: resource.medication.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes because the value set or code system is not known to the validator]
+WARNING: MedicationRequest/medicationrequest-med-admin-1: MedicationRequest.medication.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes because the value set or code system is not known to the validator]
+# Value set is in VSAC but hasn't been downloaded to FHIR IG package yet (see Zulip thread: https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/VSAC.20Package)
+WARNING: StructureDefinition/Observation-lab-sars-cov: StructureDefinition.differential.element[10].binding: The valueSet reference http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1270 on element Observation.code.coding could not be resolved
+WARNING: StructureDefinition/Observation-lab-sars-cov: StructureDefinition.snapshot.element[26].binding: The valueSet reference http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1270 on element Observation.code.coding could not be resolved
+WARNING: StructureDefinition/Observation-lab-sars-cov: StructureDefinition.snapshot.element[26].binding: The valueSet reference http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1270 on element Observation.code.coding could not be resolved
+# Examples have optional slices not defined in profile - not matching is expected behaviour
+INFORMATION: Organization/organization-acme-laboratory: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
+INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[8].resource.ofType(Organization).identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
+INFORMATION: Organization/organization-salem-medical-center: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
 # Suppress informational messages
 INFORMATION: ImplementationGuide/hl7.fhir.us.nhsn-med-admin: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle
@@ -20,7 +34,6 @@ INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[
 INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[7].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient - listed in meta
 INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[8].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
 INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[8].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization - listed in meta
-INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[8].resource.ofType(Organization).identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
 INFORMATION: Composition/composition-med-admin-1: Composition: Validate resource against profile http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Composition-inpatient-med-admin
 INFORMATION: Condition/condition-hypertension-med-admin-1: Condition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Condition
 INFORMATION: Condition/condition-hypertension-med-admin-1: Condition: Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition - listed in meta
@@ -37,10 +50,8 @@ INFORMATION: MedicationRequest/medicationrequest-med-admin-1: MedicationRequest:
 INFORMATION: Observation/observation-lab-sars-cov-med-admin: Observation: Validate resource against profile http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Observation-lab-sars-cov
 INFORMATION: Organization/organization-acme-laboratory: Organization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
 INFORMATION: Organization/organization-acme-laboratory: Organization: Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization - listed in meta
-INFORMATION: Organization/organization-acme-laboratory: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
 INFORMATION: Organization/organization-salem-medical-center: Organization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
 INFORMATION: Organization/organization-salem-medical-center: Organization: Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization - listed in meta
-INFORMATION: Organization/organization-salem-medical-center: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
 INFORMATION: Patient/patient-med-admin-1: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
 INFORMATION: Patient/patient-med-admin-1: Patient: Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient - listed in meta
 INFORMATION: Practitioner/practitioner-med-admin-henry-seven: Practitioner: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner
@@ -49,4 +60,3 @@ INFORMATION: StructureDefinition/Composition-inpatient-med-admin: StructureDefin
 INFORMATION: StructureDefinition/Condition-lab-confirmed-covid: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 INFORMATION: StructureDefinition/Condition-suspected-covid: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 INFORMATION: StructureDefinition/Observation-lab-sars-cov: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition/Observation-lab-sars-cov: StructureDefinition.snapshot.element[26].binding: The valueSet reference http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1270 on element Observation.code.coding could not be resolved
