@@ -1,5 +1,5 @@
 == Suppressed Messages ==
-
+# FMG Approved - slicing needs further consultation
 WARNING: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[0].resource.ofType(Composition).section[1].entry[0]: Found multiple matching profiles for Condition/condition-hypertension-med-admin-1 among choices: http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition, http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Condition-suspected-covid, http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Condition-lab-confirmed-covid
 WARNING: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[0].resource.ofType(Composition).section[2].entry[0]: Found multiple matching profiles for Observation/observation-lab-sars-cov-med-admin among choices: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab, http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Observation-lab-sars-cov
 # See Zulip thread: https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/US-Core.20ValueSets.20not.20recognized.20by.20validator
