@@ -8,7 +8,7 @@
 			"date": "",
 			"sequence": "STU 1 on FHIR R4",
 			"status": "ci-build",
-			"introduction": "US Realm IG providing guidance to implementers on reporting data elements to CDC National Healthcare Safety Network (NHSN) related to inpatient blood glucose laboratory (including point-of-care) results and medication administration data (medications received during inpatient stay) based on FHIR resources. This IG addresses how inpatient EHR systems should format patient, blood glucose, and medication information to enable hospital reporting of these data to NHSN.  Query parameters are defined for each type of data element based on FHIR resources.",
+			"introduction": "US Realm IG providing guidance to implementers on reporting data elements to CDC's National Healthcare Safety Network (NHSN) related to inpatient medication administration for hospitalized patients diagnosed with COVID-19, based on FHIR resources and as part of NHSN COVID-19 reporting pathways.",
 			"current": true
 		},
 		{
@@ -18,7 +18,7 @@
 			"fhirversion": "4.0.1",
 			"sequence": "STU 1 on FHIR R4",
 			"status": "ballot",
-			"introduction": "US Realm IG providing guidance to implementers on reporting data elements to CDC National Healthcare Safety Network (NHSN) related to inpatient blood glucose laboratory (including point-of-care) results and medication administration data (medications received during inpatient stay) based on FHIR resources. This IG addresses how inpatient EHR systems should format patient, blood glucose, and medication information to enable hospital reporting of these data to NHSN.  Query parameters are defined for each type of data element based on FHIR resources.",
+			"introduction": "US Realm IG providing guidance to implementers on reporting data elements to CDC's National Healthcare Safety Network (NHSN) related to inpatient medication administration for hospitalized patients diagnosed with COVID-19, based on FHIR resources and as part of NHSN COVID-19 reporting pathways.",
 			"date": "2021-03-30"
 		}
 	],
