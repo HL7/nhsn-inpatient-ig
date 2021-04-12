@@ -2,13 +2,12 @@
 	"list": [
 		{
 			"version": "current",
-			"path": "http://build.fhir.org/ig/HL7/nhsn-med-admin",
+			"path": "http://build.fhir.org/ig/HL7/nhsn-med-admin-ig/branches/main/index.html",
 			"desc": "",
 			"fhirversion": "4.0.1",
 			"date": "",
 			"sequence": "STU 1 on FHIR R4",
 			"status": "ci-build",
-			"introduction": "US Realm IG providing guidance to implementers on reporting data elements to CDC's National Healthcare Safety Network (NHSN) related to inpatient medication administration for hospitalized patients diagnosed with COVID-19, based on FHIR resources and as part of NHSN COVID-19 reporting pathways.",
 			"current": true
 		},
 		{
@@ -18,12 +17,12 @@
 			"fhirversion": "4.0.1",
 			"sequence": "STU 1 on FHIR R4",
 			"status": "ballot",
-			"introduction": "US Realm IG providing guidance to implementers on reporting data elements to CDC's National Healthcare Safety Network (NHSN) related to inpatient medication administration for hospitalized patients diagnosed with COVID-19, based on FHIR resources and as part of NHSN COVID-19 reporting pathways.",
 			"date": "2021-03-30"
 		}
 	],
 	"package-id": "hl7.fhir.us.nhsn-med-admin",
 	"title": "NHSN Reporting: Inpatient Medication Administration",
 	"canonical": "http://hl7.org/fhir/us/nhsn-med-admin",
-	"category": "Pharmacy"
+	"category": "Pharmacy",
+	"introduction": "US Realm IG providing guidance to implementers on reporting data elements to CDC's National Healthcare Safety Network (NHSN) related to inpatient medication administration for hospitalized patients diagnosed with COVID-19, based on FHIR resources and as part of NHSN COVID-19 reporting pathways."
 }
