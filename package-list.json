@@ -2,7 +2,7 @@
 	"list": [
 		{
 			"version": "current",
-			"path": "http://build.fhir.org/ig/HL7/nhsn-med-admin-ig/branches/main/index.html",
+			"path": "http://build.fhir.org/ig/HL7/nhsn-med-admin-ig",
 			"desc": "",
 			"fhirversion": "4.0.1",
 			"date": "",
