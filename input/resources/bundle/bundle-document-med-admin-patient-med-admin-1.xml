@@ -14,6 +14,9 @@
             <meta>
                <profile value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Composition-inpatient-med-admin" />
             </meta>
+             <identifier>
+                 <value value="2eec4326-bf29-4428-8d02-a334a19cfc14"/>
+             </identifier>
             <status value="final" />
             <type>
                <coding>
@@ -93,6 +96,7 @@
                <versionId value="2" />
                <lastUpdated value="2021-02-10T03:08:19.617+00:00" />
                <source value="#I8dS1RseMvmmvJJC" />
+                <profile value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/MedicationAdministration-inpatient-med-admin"/>
             </meta>
             <status value="completed" />
             <medicationCodeableConcept>
@@ -406,6 +410,7 @@
                <versionId value="3" />
                <lastUpdated value="2021-03-29T23:13:31.855+00:00" />
                <source value="#HHgXpYtZnHnbIpzQ" />
+                <profile value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/MedicationAdministration-inpatient-med-admin"/>
             </meta>
             <status value="completed" />
             <medicationCodeableConcept>

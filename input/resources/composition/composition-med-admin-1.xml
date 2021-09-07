@@ -3,11 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="composition-med-admin-1"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2021-03-29T23:13:31.867+00:00"/>
-        <source value="#NwEdyfKRF4YIa8dW"/>
+        <versionId value="6"/>
+        <lastUpdated value="2021-09-07T04:39:58.401+00:00"/>
+        <source value="#6gZDtVQUjN0AY7V3"/>
         <profile value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Composition-inpatient-med-admin"/>
     </meta>
+    <identifier>
+        <value value="2eec4326-bf29-4428-8d02-a334a19cfc14"/>
+    </identifier>
     <status value="final"/>
     <type>
         <coding>

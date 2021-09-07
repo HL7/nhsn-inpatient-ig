@@ -8,9 +8,9 @@ Medication data are integral to informing the quality, safety, and costs of U.S.
 
 This implementation guide provides HL7 FHIR resources to define standards for exchange between a hospital and NHSN. 
 
-This publication provides the data model, defined data items, and their corresponding code and value sets, for reporting inpatient medication administration data for inpatients diagnosed with COVID-19. This guide describes constraints on the US Core and base FHIR resources for reporting, which are derived from requirements developed by the NHSN in consultation wtih the Health Level Seven (HL7) Pharmacy Work Group. Resources in this US Realm implementation guide are specific to reporting medication administration data to NHSN.
+This publication provides the data model, defined data items, and their corresponding code and value sets, for reporting inpatient medication administration data for inpatients diagnosed with COVID-19. This guide describes constraints on the US Core and base FHIR resources for reporting, which are derived from requirements developed by the NHSN in consultation with the Health Level Seven (HL7) Pharmacy Work Group. Resources in this US Realm implementation guide are specific to reporting medication administration data to NHSN.
 
-This guide contains a library of FHIR profiles and is compliant with FHIR Release 4. At a minimum, a Document Bundle amd Composition will be exchanged along with a Patient, and associated COVID-19 Condition and laboratory results.
+This guide contains a library of FHIR profiles and is compliant with FHIR Release 4. At a minimum, a Document Bundle and Composition will be exchanged along with a Patient, and associated COVID-19 Condition and laboratory results.
 
 This guide defines 4 new Profiles:
 
@@ -39,6 +39,3 @@ This guide defines 4 new Profiles:
 </table>
 
 
-
-
-[Next Page - Background](background.html)

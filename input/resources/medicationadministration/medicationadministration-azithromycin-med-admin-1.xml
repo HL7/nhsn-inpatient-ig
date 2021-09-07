@@ -3,9 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="medicationadministration-azithromycin-med-admin-1"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-02-10T03:08:19.617+00:00"/>
-        <source value="#I8dS1RseMvmmvJJC"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-09-07T05:30:27.121+00:00"/>
+        <source value="#vmWyX3NJuGgt3muR"/>
+        <profile value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/MedicationAdministration-inpatient-med-admin"/>
     </meta>
     <status value="completed"/>
     <medicationCodeableConcept>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-nhsn-med-admin"/>
     <meta>
-        <versionId value="21"/>
-        <lastUpdated value="2021-03-30T23:33:16.023+00:00"/>
-        <source value="#RVA5R437AfRNz46Q"/>
+        <versionId value="24"/>
+        <lastUpdated value="2021-09-07T05:19:28.762+00:00"/>
+        <source value="#A3dp1VcQTc8HoEHE"/>
     </meta>
     <url value="http://hl7.org/fhir/us/nhsn-med-admin/ImplementationGuide/hl7-fhir-us-nhsn-med-admin"/>
     <version value="0.1.0"/>
@@ -21,7 +21,7 @@
             <value value="http://www.hl7.org/Special/committees/medication"/>
         </telecom>
     </contact>
-    <description value="This IG will support electronic submission of patient/line-level medication administration data to the National Healthcare Safety Network (NHSN). The intent of this project is to establish an electronic submission standard that is vendor-neutral that leverages existing workflows and eliminates duplicate documentation. This project will work with EHR vendors to identify data elements that can be used to describe medications administered (name, formulation, route, dose, duration) to hospitalized patients (inpatients) diagnosed with COVID-19 as part of NHSN COVID-19 reporting pathways. Medication administration events would be reported irrespective of whether or not medication administration was linked to an adverse event, refer to clinician-administered events (e.g., nurse giving a patient their medication dose), and only those occurring in inpatient settings; this excludes: emergency department, observation/short stay, inpatient rehabilitation, outpatient surgical centers, and other outpatient (including physician office) settings.&#xA;&#xA;Medication data are integral to informing the quality, safety, and costs of U.S. healthcare, supporting federal, state, and local public health, and guiding clinical decision-making in patient care. In inpatient workflows, medication administration—as captured by electronic medication administration (eMAR) records—is considered the gold standard for accurately measuring in-hospital medication exposure, including identifying the exact medications patients have received, in what formulations, doses, and for what duration of time. The need for medication administration information has never been clearer as during the COVID-19 pandemic, where identification of the medications that acutely ill hospitalized patients with COVID-19 had received was integral to understanding clinical management of this new public health threat and directing public health resources, including scarce medications. The continued reliance on the &quot;medication list&quot; resource instead of the &quot;medication administration&quot; resource is a severe limitation in achieving accurate representation of medication exposure in U.S. healthcare data through FHIR resources.&#xA;&#xA;### IG&#xA;&#xA;This implementation guide provides HL7 FHIR resources to define standards for exchange between a hospital and NHSN. &#xA;&#xA;This publication provides the data model, defined data items, and their corresponding code and value sets, for reporting inpatient medication administration data for inpatients diagnosed with COVID-19. This guide describes constraints on the US Core and base FHIR resources for reporting, which are derived from requirements developed by the NHSN in consultation wtih the Health Level Seven (HL7) Pharmacy Work Group. Resources in this US Realm implementation guide are specific to reporting medication administration data to NHSN.&#xA;&#xA;This guide contains a library of FHIR profiles and is compliant with FHIR Release 4. At a minimum, a Document Bundle amd Composition will be exchanged along with a Patient, and associated COVID-19 Condition and laboratory results.&#xA;&#xA;This guide defines 4 new Profiles:&#xA;&#xA;* [Composition - Inpatient Medication Administration](StructureDefinition-Composition-inpatient-med-admin.html)&#xA;* [Condition - Lab Confirmed COVID-19](StructureDefinition-Condition-lab-confirmed-covid.html)&#xA;* [Condition - Suspected COVID-19](StructureDefinition-Condition-suspected-covid.html)&#xA;* [Observation - Laboratory SARS COVID-19](StructureDefinition-Observation-lab-sars-cov.html)"/>
+    <description value="This IG will support electronic submission of patient/line-level medication administration data to the National Healthcare Safety Network (NHSN). The intent of this project is to establish an electronic submission standard that is vendor-neutral that leverages existing workflows and eliminates duplicate documentation. This project will work with EHR vendors to identify data elements that can be used to describe medications administered (name, formulation, route, dose, duration) to hospitalized patients (inpatients) diagnosed with COVID-19 as part of NHSN COVID-19 reporting pathways. Medication administration events would be reported irrespective of whether or not medication administration was linked to an adverse event, refer to clinician-administered events (e.g., nurse giving a patient their medication dose), and only those occurring in inpatient settings; this excludes: emergency department, observation/short stay, inpatient rehabilitation, outpatient surgical centers, and other outpatient (including physician office) settings.&#xA;&#xA;Medication data are integral to informing the quality, safety, and costs of U.S. healthcare, supporting federal, state, and local public health, and guiding clinical decision-making in patient care. In inpatient workflows, medication administration—as captured by electronic medication administration (eMAR) records—is considered the gold standard for accurately measuring in-hospital medication exposure, including identifying the exact medications patients have received, in what formulations, doses, and for what duration of time. The need for medication administration information has never been clearer as during the COVID-19 pandemic, where identification of the medications that acutely ill hospitalized patients with COVID-19 had received was integral to understanding clinical management of this new public health threat and directing public health resources, including scarce medications. The continued reliance on the &quot;medication list&quot; resource instead of the &quot;medication administration&quot; resource is a severe limitation in achieving accurate representation of medication exposure in U.S. healthcare data through FHIR resources.&#xA;&#xA;### IG&#xA;&#xA;This implementation guide provides HL7 FHIR resources to define standards for exchange between a hospital and NHSN. &#xA;&#xA;This publication provides the data model, defined data items, and their corresponding code and value sets, for reporting inpatient medication administration data for inpatients diagnosed with COVID-19. This guide describes constraints on the US Core and base FHIR resources for reporting, which are derived from requirements developed by the NHSN in consultation with the Health Level Seven (HL7) Pharmacy Work Group. Resources in this US Realm implementation guide are specific to reporting medication administration data to NHSN.&#xA;&#xA;This guide contains a library of FHIR profiles and is compliant with FHIR Release 4. At a minimum, a Document Bundle and Composition will be exchanged along with a Patient, and associated COVID-19 Condition and laboratory results.&#xA;&#xA;This guide defines 4 new Profiles:&#xA;&#xA;* [Composition - Inpatient Medication Administration](StructureDefinition-Composition-inpatient-med-admin.html)&#xA;* [Condition - Lab Confirmed COVID-19](StructureDefinition-Condition-lab-confirmed-covid.html)&#xA;* [Condition - Suspected COVID-19](StructureDefinition-Condition-suspected-covid.html)&#xA;* [Observation - Laboratory SARS COVID-19](StructureDefinition-Observation-lab-sars-cov.html)"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -196,6 +196,15 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Condition-suspected-covid"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/MedicationAdministration-inpatient-med-admin"/>
+                <display value="MedicationAdministrationInpatientMedAdmin"/>
+            </reference>
+            <name value="MedicationAdministrationInpatientMedAdmin"/>
+            <description value="This profile constrains the base MedicationAdministration resource for use in the NHSN Inpatient Medication Administration IG. The constraints are based on the requirements laid out in USCDI Level 2 for Medication Administration."/>
+            <exampleBoolean value="false"/>
+        </resource>
         <page>
             <nameUrl value="index.html"/>
             <title value="Home Page"/>
@@ -217,7 +226,7 @@
         </parameter>
         <parameter>
             <code value="releaselabel"/>
-            <value value="STU 1 Ballot"/>
+            <value value="CI Build"/>
         </parameter>
         <parameter>
             <code value="path-expansion-params"/>

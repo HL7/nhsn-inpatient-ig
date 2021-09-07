@@ -3,9 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="medicationadministration-remdesivir-med-admin-1"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-03-29T23:13:31.855+00:00"/>
-        <source value="#HHgXpYtZnHnbIpzQ"/>
+        <versionId value="4"/>
+        <lastUpdated value="2021-09-07T05:30:11.095+00:00"/>
+        <source value="#vOgu8aLBB2pL9urR"/>
+        <profile value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/MedicationAdministration-inpatient-med-admin"/>
     </meta>
     <status value="completed"/>
     <medicationCodeableConcept>
