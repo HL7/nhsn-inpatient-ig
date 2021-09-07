@@ -13,7 +13,7 @@
         <coding>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <code value="2284960"/>
-            <display value="remdesivir 100 MG Injection (EUA)"/>
+            <display value="remdesivir 100 MG Injection"/>
         </coding>
         <text value="remdesivir 100 MG Injection (EUA)"/>
     </medicationCodeableConcept>
