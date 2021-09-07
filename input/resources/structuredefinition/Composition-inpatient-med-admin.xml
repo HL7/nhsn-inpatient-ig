@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-inpatient-med-admin"/>
     <meta>
-        <versionId value="32"/>
-        <lastUpdated value="2021-09-07T05:05:13.570+00:00"/>
-        <source value="#HwNREsqBt5VZ5Hut"/>
+        <versionId value="33"/>
+        <lastUpdated value="2021-09-07T07:01:37.256+00:00"/>
+        <source value="#ofQstvo8y4HEiygJ"/>
     </meta>
     <url value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Composition-inpatient-med-admin"/>
     <version value="0.1.0"/>
@@ -130,7 +130,7 @@
             <sliceName value="medicationAdministration"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration"/>
+                <targetProfile value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/MedicationAdministration-inpatient-med-admin"/>
             </type>
         </element>
         <element id="Composition.section:medicationSection.entry:USCoreMedicationRequest">

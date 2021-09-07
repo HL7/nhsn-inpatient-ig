@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MedicationAdministration-inpatient-med-admin"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2021-09-07T05:28:59.466+00:00"/>
-        <source value="#sGouUo2iNOmxHh9C"/>
+        <versionId value="10"/>
+        <lastUpdated value="2021-09-07T06:53:59.558+00:00"/>
+        <source value="#sTtCfpGFCrrWQdxx"/>
     </meta>
     <url value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/MedicationAdministration-inpatient-med-admin"/>
     <version value="0.1.0"/>
