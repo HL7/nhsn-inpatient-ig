@@ -2,6 +2,10 @@
 # See Zulip thread: https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/US-Core.20ValueSets.20not.20recognized.20by.20validator
 [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes because the value set or a code system it depends on is not known to the validator]
 # Value set is in VSAC but hasn't been downloaded to FHIR IG package yet (see Zulip thread: https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/VSAC.20Package)
+The valueSet reference http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1270 on element Observation.code.coding could not be resolved
+# The above issue with the value set being in VSAC but not in the FHIR IG package is preventing proper slicing validation
+Found multiple matching profiles for Observation/observation-lab-sars-cov-med-admin among choices: http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Observation-lab-sars-cov, http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab
 # Examples have optional slices not defined in profile - not matching is expected behaviour
-# US Core profiles are parents of other profiles
-# Suppress informational messages
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
+# US Core profiles are parents of other profiles, matching both the parent and child is expected behaviour
+Found multiple matching profiles for Observation/observation-lab-sars-cov-med-admin among choices: http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Observation-lab-sars-cov, http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab
