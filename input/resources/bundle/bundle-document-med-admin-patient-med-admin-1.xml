@@ -66,8 +66,8 @@
                   </coding>
                </code>
                <entry>
-                  <reference value="Condition/condition-hypertension-med-admin-1" />
-                  <display value="Hypertensive disorder, systemic arterial (disorder)" />
+                   <reference value="Condition/condition-suspected-covid-med-admin-1" />
+                   <display value="Suspected disease caused by Severe acute respiratory coronavirus 2 (situation)" />
                </entry>
             </section>
             <section>
@@ -356,49 +356,53 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="http://example.org/fhir/Condition/condition-hypertension-med-admin-1" />
+       <fullUrl value="http://example.org/fhir/Condition/condition-suspected-covid-med-admin-1" />
       <resource>
-         <Condition>
-            <id value="condition-hypertension-med-admin-1" />
-            <meta>
-               <versionId value="1" />
-               <lastUpdated value="2021-02-10T03:08:19.624+00:00" />
-               <source value="#fcDFDLc0nh6DzGxE" />
-               <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition" />
-            </meta>
-            <clinicalStatus>
-               <coding>
-                  <system value="http://terminology.hl7.org/CodeSystem/condition-clinical" />
-                  <code value="active" />
-               </coding>
-            </clinicalStatus>
-            <verificationStatus>
-               <coding>
-                  <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status" />
-                  <code value="confirmed" />
-               </coding>
-            </verificationStatus>
-            <category>
-               <coding>
-                  <system value="http://terminology.hl7.org/CodeSystem/condition-category" />
-                  <code value="problem-list-item" />
-                  <display value="Problem List Item" />
-               </coding>
-            </category>
-            <code>
-               <coding>
-                  <system value="http://snomed.info/sct" />
-                  <code value="38341003" />
-                  <display value="Hypertensive disorder, systemic arterial (disorder)" />
-               </coding>
-            </code>
-            <subject>
-               <reference value="Patient/patient-med-admin-1" />
-               <display value="Name: 'masked'" />
-            </subject>
-            <onsetDateTime value="2019-01-02T10:30:35-06:00" />
-            <recordedDate value="2019-01-02T10:30:35-06:00" />
-         </Condition>
+          <Condition
+              xmlns="http://hl7.org/fhir">
+              <id value="condition-suspected-covid-med-admin-1"/>
+              <meta>
+                  <versionId value="2"/>
+                  <lastUpdated value="2021-03-29T23:13:31.855+00:00"/>
+                  <source value="#d3uv1AF8BcDdvd42"/>
+                  <profile value="http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Condition-suspected-covid"/>
+              </meta>
+              <clinicalStatus>
+                  <coding>
+                      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+                      <code value="active"/>
+                  </coding>
+              </clinicalStatus>
+              <verificationStatus>
+                  <coding>
+                      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+                      <code value="unconfirmed"/>
+                  </coding>
+              </verificationStatus>
+              <category>
+                  <coding>
+                      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+                      <code value="encounter-diagnosis"/>
+                      <display value="Encounter Diagnosis"/>
+                  </coding>
+              </category>
+              <code>
+                  <coding>
+                      <system value="http://snomed.info/sct"/>
+                      <code value="840544004"/>
+                      <display value="Suspected disease caused by Severe acute respiratory coronavirus 2 (situation)"/>
+                  </coding>
+              </code>
+              <subject>
+                  <reference value="Patient/patient-med-admin-1"/>
+                  <display value="Name: 'masked'"/>
+              </subject>
+              <encounter>
+                  <reference value="Encounter/encounter-completed-inpatient-med-admin-1"/>
+              </encounter>
+              <onsetDateTime value="2021-01-02T10:30:35-06:00"/>
+              <recordedDate value="2021-01-02T10:30:35-06:00"/>
+          </Condition>
       </resource>
    </entry>
    <entry>
