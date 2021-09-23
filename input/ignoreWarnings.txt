@@ -17,6 +17,8 @@ INFORMATION: Organization/organization-acme-laboratory: Organization.identifier[
 INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[8].resource.ofType(Organization).identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
 INFORMATION: Organization/organization-salem-medical-center: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
 INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[9].resource.ofType(Organization).identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
+# US Core Condition is parent of Condition-suspected-covid, this is expected behaviour
+Found multiple matching profiles for Condition/condition-suspected-covid-med-admin-1 among choices: http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Condition-suspected-covid, http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition
 # Suppress informational messages
 INFORMATION: ImplementationGuide/hl7.fhir.us.nhsn-med-admin: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle
@@ -38,6 +40,7 @@ INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[
 INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[7].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient - listed in meta
 INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[8].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
 INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[8].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization - listed in meta
+INFORMATION: Bundle/bundle-document-med-admin-patient-med-admin-1: Bundle.entry[0].resource.ofType(Composition).section[1].entry[0]: Details for Condition/condition-suspected-covid-med-admin-1 matching against Profile http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Condition-lab-confirmed-covid
 INFORMATION: Composition/composition-med-admin-1: Composition: Validate resource against profile http://hl7.org/fhir/us/nhsn-med-admin/StructureDefinition/Composition-inpatient-med-admin
 INFORMATION: Condition/condition-hypertension-med-admin-1: Condition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Condition
 INFORMATION: Condition/condition-hypertension-med-admin-1: Condition: Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition - listed in meta
